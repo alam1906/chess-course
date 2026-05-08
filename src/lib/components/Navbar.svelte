@@ -5,7 +5,7 @@
 	import { fade } from 'svelte/transition';
 	import { buys, keterangan } from '$lib/data/local/buy';
 
-	let visible = $state(true);
+	let visible = $state(false);
 	function closeDialog() {
 		visible = false;
 	}
