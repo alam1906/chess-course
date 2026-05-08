@@ -46,22 +46,24 @@
 			class="flex w-[85vw] flex-1 flex-col items-start gap-y-4 overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl md:w-[50vw]"
 			onclick={(e) => e.stopPropagation()}
 		>
-			<div>
-				<div class="mb-1 text-center font-medium">Cara Membeli</div>
-				<ul class="mx-4 list-decimal text-start">
-					{#each buys as item, i (i)}
-						<li class="">{item.description}</li>
-					{/each}
-				</ul>
-			</div>
+			<div class="m-auto flex flex-col min-[500px]:max-w-3xl">
+				<div class="mb-3 flex w-full flex-col">
+					<div class="mb-1 text-center font-medium">Cara Membeli</div>
+					<ul class="mx-4 list-decimal text-start">
+						{#each buys as item, i (i)}
+							<li class="">{item.description}</li>
+						{/each}
+					</ul>
+				</div>
 
-			<div>
-				<div class="mb-1 text-center font-medium">Jika course tidak ada</div>
-				<ul class="mx-4 list-decimal text-start">
-					{#each keterangan as item, i (i)}
-						<li class="">{item.description}</li>
-					{/each}
-				</ul>
+				<div class="flex w-full flex-col">
+					<div class="mb-1 text-center font-medium">Jika course tidak ada</div>
+					<ul class="mx-4 list-decimal text-start">
+						{#each keterangan as item, i (i)}
+							<li class="">{item.description}</li>
+						{/each}
+					</ul>
+				</div>
 			</div>
 		</div>
 	</button>
