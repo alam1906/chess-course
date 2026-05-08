@@ -36,18 +36,18 @@
 	<!-- Overlay -->
 	<button
 		transition:fade={{ duration: 200 }}
-		class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+		class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-5 backdrop-blur-sm"
 		onclick={closeDialog}
 	>
 		<!-- Dialog -->
 		<!-- svelte-ignore a11y_click_events_have_key_events -->
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div
-			class="flex w-[85vw] flex-col items-start gap-y-4 rounded-2xl bg-white p-6 shadow-2xl md:w-[50vw]"
+			class="flex w-[85vw] flex-1 flex-col items-start gap-y-4 overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl md:w-[50vw]"
 			onclick={(e) => e.stopPropagation()}
 		>
 			<div>
-				<div class="mb-2 text-center font-medium">Cara Membeli</div>
+				<div class="mb-1 text-center font-medium">Cara Membeli</div>
 				<ul class="mx-4 list-decimal text-start">
 					{#each buys as item, i (i)}
 						<li class="">{item.description}</li>
@@ -56,7 +56,7 @@
 			</div>
 
 			<div>
-				<div class="mb-2 text-center font-medium">Jika course tidak ada</div>
+				<div class="mb-1 text-center font-medium">Jika course tidak ada</div>
 				<ul class="mx-4 list-decimal text-start">
 					{#each keterangan as item, i (i)}
 						<li class="">{item.description}</li>
