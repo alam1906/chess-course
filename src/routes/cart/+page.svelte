@@ -5,7 +5,7 @@
 	import { Trash } from '@lucide/svelte';
 </script>
 
-<div class="mx-auto mt-10 max-w-5xl px-5 md:px-10">
+<div class="mx-auto mt-10 max-w-5xl px-3 md:px-10">
 	<div class="w-full rounded-md border border-gray-200 bg-white p-5 shadow-md">
 		<div class="mb-7 text-2xl font-semibold">Cart</div>
 		<div class="grid grid-cols-1 gap-3">
@@ -14,10 +14,10 @@
 					<div class="flex gap-3">
 						<img src={getImageUrl(banner)} alt={banner} class="max-w-32 rounded-md" />
 						<div class="flex flex-col">
-							<div class="font-medium">
+							<div class="line-clamp-2 font-medium">
 								{title}
 							</div>
-							<div>{duration}</div>
+							<div class="text-sm text-gray-600">{duration}</div>
 						</div>
 					</div>
 
