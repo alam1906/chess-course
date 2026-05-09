@@ -43,7 +43,7 @@
 		<!-- svelte-ignore a11y_click_events_have_key_events -->
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div
-			class="flex w-[85vw] flex-1 flex-col items-start gap-y-4 overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl md:w-[50vw]"
+			class="flex w-[85vw] flex-col items-start gap-y-4 overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl md:w-[50vw]"
 			onclick={(e) => e.stopPropagation()}
 		>
 			<div class="m-auto flex flex-col min-[500px]:max-w-3xl">
