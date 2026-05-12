@@ -73,7 +73,7 @@
 					<div class="px-2 py-2">
 						<div class="flex gap-2">
 							<div class="tracking-tighter text-gray-600 line-through">Rp 100.000</div>
-							<div class="font-medium tracking-tighter text-blue-700">Rp 15.000</div>
+							<div class="font-medium tracking-tighter text-blue-700">Rp 20.000</div>
 						</div>
 
 						<div class=" line-clamp-2 font-medium">
